@@ -11,6 +11,7 @@ export default createGlobalStyle`
     html, body{
         height: 100%;
         color: ${props => props.theme.colors.primary};
+        scroll-behavior: smooth;
     }
 
     h1, span{
@@ -27,7 +28,8 @@ export default createGlobalStyle`
     p{
         font-family: 'Nunito Sans', sans-serif;
         font-weight: 400;
-        line-height: 20px;
+        line-height: 24px;
+        font-size: 1.1rem;
     }
 
     a{

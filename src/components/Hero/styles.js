@@ -10,13 +10,12 @@ export const Container = styled.div`
 
 export const Content = styled.div` 
     text-align: center;
-    color: ${props => props.theme.colors.text_light};
+    color: ${props => props.theme.colors.text};
 `;
 
 export const InfoHero = styled.div`
     p{
         margin: 15px 20px 30px 20px;
-        font-size: 1.1rem;
     }
 `;
 
