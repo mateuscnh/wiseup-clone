@@ -27,14 +27,22 @@ export default createGlobalStyle`
         font-weight: 400;
     }
 
+    a{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        text-decoration: none;
+        color: #fff;
+    }
+
     button{
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
     }
 
-    .container{
+    .content{
         max-width: 420px;
         margin: 0 auto;
+        padding: 0 20px;
     }
 
 `
