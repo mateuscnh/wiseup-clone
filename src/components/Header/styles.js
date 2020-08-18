@@ -8,6 +8,7 @@ const MobMenuAnimate = keyframes`
 
 export const Container = styled.div`
     position: fixed;
+    z-index: 10;
 
     width: 100%;
     height: 80px;
@@ -33,7 +34,7 @@ export const MobMenu = styled.div`
     position: fixed;
 
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: ${props => props.theme.colors.background_primary};
 
     animation: ${MobMenuAnimate} .2s linear;

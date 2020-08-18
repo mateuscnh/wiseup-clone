@@ -15,7 +15,9 @@ export default createGlobalStyle`
 
     h1, span{
         font-family: 'Nunito', sans-serif;
-        font-weight: 700;   
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 45px;   
     }
 
     span{
@@ -25,6 +27,7 @@ export default createGlobalStyle`
     p{
         font-family: 'Nunito Sans', sans-serif;
         font-weight: 400;
+        line-height: 20px;
     }
 
     a{
@@ -37,6 +40,9 @@ export default createGlobalStyle`
     button{
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
+
+        color: ${props => props.theme.colors.primary};
+        background-color: ${props => props.theme.colors.secondary};
     }
 
     .content{

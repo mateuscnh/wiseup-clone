@@ -8,12 +8,15 @@ import menu_x from '../../assets/images/icon-menu-x.svg';
 
 function Header() {
     const [activeMenu, setActiveMenu] = useState(false);
+    const body = document.body
 
     function handleClick(e) {
 
         function activeMenu(active) {
             setActiveMenu(active);
+            document.body.style.overflow = 'hidden';
             if (active) return menu_x;
+            document.body.style.overflow = 'visible';
             return menu_bars;
         }
 
