@@ -8,6 +8,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Benefits from './components/Benefits';
 import Methodology from './components/Methodology';
+import HowToStudy from './components/HowToStudy';
 
 const App = () => (
   <ThemeProvider theme={wiseup}>
@@ -16,6 +17,7 @@ const App = () => (
     <Hero />
     <Benefits />
     <Methodology />
+    <HowToStudy />
   </ThemeProvider>
 );
 

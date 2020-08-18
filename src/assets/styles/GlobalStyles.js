@@ -49,6 +49,7 @@ export default createGlobalStyle`
 
     .content{
         max-width: 420px;
+        text-align: center;
         margin: 0 auto;
         padding: 0 20px;
     }
