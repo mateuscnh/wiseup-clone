@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 
-import { Container, Content, MobMenu } from './styles';
+import { Container, Content, Menu, MobMenu } from './styles';
 
+import logo from '../../assets/images/wup-logo.svg';
 import logo_mobile from '../../assets/images/wup-logo-mob.svg';
+
 import menu_bars from '../../assets/images/icon-menu.svg';
 import menu_x from '../../assets/images/icon-menu-x.svg';
 
@@ -38,6 +40,15 @@ function Header() {
         <Container>
             <Content className="content">
                 <img src={logo_mobile} alt="" />
+                <img src={logo} alt="" />
+                <Menu>
+                    <ul>
+                        <li><a href="#benefits" onClick={handleClick}>Benefícios</a></li>
+                        <li><a href="#methodology" onClick={handleClick}>Metodologia</a></li>
+                        <li><a href="#howToStudy" onClick={handleClick}>Como estudar?</a></li>
+                        <li><a href="#depositions" onClick={handleClick}>Depoimentos</a></li>
+                    </ul>
+                </Menu>
                 <img id="menu-bars" src={menu_bars} alt="" onClick={handleClick} />
             </Content>
             {activeMenu &&
@@ -46,6 +57,7 @@ function Header() {
                         <li><a href="#benefits" onClick={handleClick}>Benefícios</a></li>
                         <li><a href="#methodology" onClick={handleClick}>Metodologia</a></li>
                         <li><a href="#howToStudy" onClick={handleClick}>Como estudar?</a></li>
+                        <li><a href="#depositions" onClick={handleClick}>Depoimentos</a></li>
                     </ul>
                 </MobMenu>
             }

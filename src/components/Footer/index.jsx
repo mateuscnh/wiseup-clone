@@ -17,8 +17,21 @@ const Container = styled.footer`
     }
 
     img{
+        max-height: 30px;
         margin: 10px 5px;
         cursor: pointer;
+    }
+
+    @media (min-width: 768px){
+        .content{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            p{
+                font-size: .8rem;
+            }
+        }
     }
 `
 

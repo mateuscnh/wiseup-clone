@@ -44,4 +44,8 @@ export const Container = styled.div`
         line-height: 22px;
         padding: 16px;
     }
+
+    @media (min-width: 76px){
+        min-width: 32%;
+    }
 `;

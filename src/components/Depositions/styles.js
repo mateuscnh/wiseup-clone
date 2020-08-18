@@ -8,4 +8,22 @@ export const Container = styled.div`
         padding: 20px 0;
         margin-bottom: 40px;
     }
+
+    @media (min-width: 768px){
+        .content{
+            h1 + div{
+                display: none;
+            }
+        }
+    }
 `;
+
+export const StyledDepositions = styled.div`
+    display: none;
+
+    @media (min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+`

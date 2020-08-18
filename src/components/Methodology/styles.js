@@ -14,10 +14,26 @@ export const Container = styled.div`
     h1 + p{
         margin-bottom: 20px;
     }
+
+    @media (min-width: 768px){
+        .content{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        div + div{
+            padding: 0 40px;
+            flex: 1;
+            text-align: left;
+        }
+    }
+    
 `;
 
 export const Video = styled.div`
     position: relative;
+    flex: 1;
 
     height: 240px;
 

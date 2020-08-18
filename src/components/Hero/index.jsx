@@ -3,7 +3,8 @@ import React from 'react';
 import { Container, Content, InfoHero, NotebookHero, Notebook, BlurShadow } from './styles';
 import Button from '../Button';
 
-import elements from '../../assets/images/online/elementos-mob.png';
+import elements from '../../assets/images/online/elementos.png';
+import elements_mob from '../../assets/images/online/elementos-mob.png';
 import notebook from '../../assets/images/online/notebook.png';
 
 function Hero() {
@@ -16,10 +17,8 @@ function Hero() {
                     <Button>COMECE AGORA</Button>
                 </InfoHero>
                 <BlurShadow />
-                <NotebookHero background={elements}>
-                    <Notebook background={notebook}>
-
-                    </Notebook>
+                <NotebookHero background={elements_mob} background2={elements}>
+                    <Notebook background={notebook} />
                 </NotebookHero>
             </Content>
         </Container>

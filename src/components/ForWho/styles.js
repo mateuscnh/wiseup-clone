@@ -21,4 +21,23 @@ export const Container = styled.div`
 
         }
     }
+
+    @media (min-width: 768px){
+        display: flex;
+        align-items: center;
+
+        .social{
+            padding-right: 30px;
+            width: 50%;
+
+            h1, p{
+                display: none;
+            }
+        }
+
+        .forWho{
+            width: 50%;
+            text-align: left;
+        }
+    }
 `;

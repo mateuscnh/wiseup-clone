@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { Container, StyledDepositions } from './styles';
 import SingleDeposition from './SingleDeposition';
 import Slider from '../Slider';
 
@@ -32,7 +32,7 @@ function Depositions() {
     ];
 
     return (
-        <Container>
+        <Container id="depositions">
             <div className="content">
                 <h1>Depoimentos</h1>
                 <Slider arrowLeft={icon_prev} arrowRight={icon_next}>
@@ -40,6 +40,11 @@ function Depositions() {
                         <SingleDeposition key={id} name={name} deposition={deposition} />
                     )}
                 </Slider>
+                <StyledDepositions>
+                    {data.map(({ id, name, deposition }) =>
+                        <SingleDeposition key={id} name={name} deposition={deposition} />
+                    )}
+                </StyledDepositions>
             </div>
         </Container>
     );

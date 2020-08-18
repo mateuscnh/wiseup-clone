@@ -74,16 +74,18 @@ function HowToStudy() {
     return (
         <Container id="howToStudy">
             <div className="content">
-                <h1>Como estudar com o <span>Wise Up Online?</span></h1>
-                <img src={cel_gif} alt="" />
+                <div className="infos">
+                    <h1>Como estudar com o <span>Wise Up Online?</span></h1>
+                    <img src={cel_gif} alt="" />
 
-                <Details>
-                    <p>O curso de inglês online é bem simples e intuitivo. Em três passos você desenvolve seu inglês:</p>
-                    <p><span>Aprenda</span> com documentários originais que apresentam o inglês aplicado na prática.</p>
-                    <p><span>Explore</span> com as aulas de vocabulário, gramática e guides de palavras com listening.</p>
-                    <p><span>Pratique</span> com mais de 4 mil exercícios de fixação.</p>
-                    <Button>ASSINE JÁ</Button>
-                </Details>
+                    <Details>
+                        <p>O curso de inglês online é bem simples e intuitivo. Em três passos você desenvolve seu inglês:</p>
+                        <p><span>Aprenda</span> com documentários originais que apresentam o inglês aplicado na prática.</p>
+                        <p><span>Explore</span> com as aulas de vocabulário, gramática e guides de palavras com listening.</p>
+                        <p><span>Pratique</span> com mais de 4 mil exercícios de fixação.</p>
+                        <Button>ASSINE JÁ</Button>
+                    </Details>
+                </div>
 
                 <Modules>
                     {data.map(({ id, imgURL, title }) =>

@@ -15,6 +15,32 @@ export const Container = styled.div`
     button{
         margin: 26px 0;
     }
+
+    @media (min-width: 768px){
+        .infos{
+            display: flex;
+            justify-content: space-between;
+
+            h1{
+                text-align: right;
+                margin-right: 20px;
+            }
+
+            img{
+                position: relative;
+                top: -100px;
+                max-width: 240px;
+            }
+
+            div{
+                margin-left: 20px;
+            }
+
+        }
+            button{
+                width: 260px;
+            }
+    }
 `;
 
 export const Details = styled.div`

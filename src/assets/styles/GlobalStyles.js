@@ -53,5 +53,11 @@ export default createGlobalStyle`
         margin: 0 auto;
         padding: 0 20px;
     }
+    
+    @media (min-width: 768px){
+        .content{
+            max-width: 768px;
+        }
+    }
 
 `

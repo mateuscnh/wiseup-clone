@@ -17,10 +17,12 @@ function Methodology() {
                     </div>
                 </Video>
 
-                <h1>Metodologia</h1>
-                <p>Com o curso do Wise Up Online você aprende observando o inglês aplicado na prática em situações mais comuns pelas quais você irá precisar utilizar a língua de acordo com o tema do seu interesse.</p>
-                <p>Tudo para oferecer a você uma experiência de imersão cultural instigante, ajudando você a pensar em inglês e tornando seu aprendizado muito mais fácil.</p>
-                <Button>SAIBA MAIS</Button>
+                <div>
+                    <h1>Metodologia</h1>
+                    <p>Com o curso do Wise Up Online você aprende observando o inglês aplicado na prática em situações mais comuns pelas quais você irá precisar utilizar a língua de acordo com o tema do seu interesse.</p>
+                    <p>Tudo para oferecer a você uma experiência de imersão cultural instigante, ajudando você a pensar em inglês e tornando seu aprendizado muito mais fácil.</p>
+                    <Button>SAIBA MAIS</Button>
+                </div>
             </div>
         </Container>
     );

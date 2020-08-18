@@ -6,6 +6,17 @@ export const Container = styled.div`
     padding-top: 100px;
     min-height: 116vh;
     background-color: ${props => props.theme.colors.background_primary};
+
+    @media (min-width: 768px){
+        padding-bottom: 60px;
+        h1{
+            margin: 0 auto;
+            width: 300px;
+        }
+        button{
+            width: 300px;
+        }  
+    }
 `;
 
 export const Content = styled.div` 
@@ -28,6 +39,15 @@ export const NotebookHero = styled.div`
 
     background: transparent url(${props => props.background}) no-repeat center;
     background-size: contain;
+
+    @media (min-width: 768px){
+        height: 500px;
+        background: transparent url(${props => props.background2}) no-repeat center;
+        background-size: contain;
+        > div{
+            height: 400px;
+        }
+    }
 `;
 
 export const Notebook = styled.div`
@@ -39,7 +59,6 @@ export const Notebook = styled.div`
 
     background: url(${props => props.background}) no-repeat center;
     background-size: contain;
-
 `
 
 export const BlurShadow = styled.div`
@@ -56,4 +75,13 @@ export const BlurShadow = styled.div`
     filter: blur(40px);
 
     background-color: ${props => props.theme.colors.primary};
+
+    @media (min-width: 768px){
+        width: 460px;
+        height: 460px;
+        
+        > div{
+            height: 400px;
+        }
+    }
 `

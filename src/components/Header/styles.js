@@ -14,6 +14,24 @@ export const Container = styled.div`
     height: 80px;
 
     background-color: ${props => props.theme.colors.background_primary};
+
+    img + img{
+        display: none;
+    }
+
+    img + div{
+        display: none;
+    }
+
+    @media (min-width: 768px){
+        img{
+            display: none;
+        }
+
+        img + img, img + div{
+            display: block;
+        }
+    }
 `;
 
 export const Content = styled.div`
@@ -29,6 +47,14 @@ export const Content = styled.div`
         cursor: pointer;
     }
 `;
+
+export const Menu = styled.div`
+    display: flex;
+    ul li{
+        margin: 0 4px;
+        display: inline-block;
+    }
+`
 
 export const MobMenu = styled.div`
     position: fixed;
@@ -81,24 +107,4 @@ export const MobMenu = styled.div`
     }
 
 `
-
-// .selected{
-//     color: ${props => props.theme.colors.secondary};
-
-//     ::before{
-//         position: absolute;
-//         bottom: -8px;
-
-//         content: ' ';
-
-//         width: 30%;
-//         height: 4px;
-
-//         border-radius: 10px;
-
-//         transition: .2s;
-
-//         background-color: ${props => props.theme.colors.secondary};
-//     }
-// }
 
