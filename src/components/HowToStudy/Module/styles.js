@@ -17,11 +17,14 @@ export const Container = styled.div`
     .img-content{
         position: relative;
         height: 60%;
+        overflow: hidden;
         
         img{
             width: 100%;
-            height: 100%;
+            object-fit: cover;
+            object-position: center;
         }
+
         img + img{
             width: auto;
             position: absolute;
