@@ -46,7 +46,6 @@ function Header() {
                         <li><a href="#benefits" onClick={handleClick}>Benefícios</a></li>
                         <li><a href="#methodology" onClick={handleClick}>Metodologia</a></li>
                         <li><a href="#howToStudy" onClick={handleClick}>Como estudar?</a></li>
-                        <li><a href="#faq" onClick={handleClick}>FAQ</a></li>
                     </ul>
                 </MobMenu>
             }

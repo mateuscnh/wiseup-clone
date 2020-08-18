@@ -7,7 +7,6 @@ import SingleDot from './SingleDot';
 export default function ({ children, arrowLeft, arrowRight }) {
     const [visibleSlide, setVisibleSlide] = useState(0);
     const [dots, setDots] = useState([]);
-    let slideIndex = 0;
 
     useEffect(() => {
         function loadDots() {
