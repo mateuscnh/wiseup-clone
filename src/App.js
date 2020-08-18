@@ -10,6 +10,7 @@ import Benefits from './components/Benefits';
 import Methodology from './components/Methodology';
 import HowToStudy from './components/HowToStudy';
 import ForWho from './components/ForWho';
+import Depositions from './components/Depositions';
 
 const App = () => (
   <ThemeProvider theme={wiseup}>
@@ -20,6 +21,7 @@ const App = () => (
     <Methodology />
     <HowToStudy />
     <ForWho />
+    <Depositions />
   </ThemeProvider>
 );
 
