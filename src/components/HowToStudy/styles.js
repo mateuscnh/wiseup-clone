@@ -29,7 +29,7 @@ export const Container = styled.div`
             img{
                 position: relative;
                 top: -100px;
-                max-width: 240px;
+                max-width: 300px;
             }
 
             div{
@@ -60,9 +60,7 @@ export const Details = styled.div`
 `;
 
 export const Modules = styled.div`
-    margin-top: 30px;
-
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 `;

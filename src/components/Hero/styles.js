@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const Container = styled.div`
     position: relative;
 
-    padding-top: 100px;
-    min-height: 116vh;
+    padding: 100px 0;
+    min-height: 100vh;
     background-color: ${props => props.theme.colors.background_primary};
 
     @media (min-width: 768px){
@@ -16,55 +16,77 @@ export const Container = styled.div`
         button{
             width: 300px;
         }  
+
+        div + div{
+                div + img{
+                    display: none;
+                }
+            }
+    }
+
+    @media (min-width: 992px){
+        .content{
+            display: flex;  
+            justify-content: space-around;
+            align-items: center;
+        }
     }
 `;
 
 export const Content = styled.div` 
     text-align: center;
-    color: ${props => props.theme.colors.text};
+    color: ${props => props.theme.colors.text}; 
 `;
 
 export const InfoHero = styled.div`
     p{
         margin: 15px 20px 30px 20px;
     }
-`;
 
-export const NotebookHero = styled.div`
-    position: relative;
-    z-index: 1;
-    margin-top: 20px;
+    @media (min-width: 992px){
+        text-align: left;
 
-    height: 360px;
-
-    background: transparent url(${props => props.background}) no-repeat center;
-    background-size: contain;
-
-    @media (min-width: 768px){
-        height: 500px;
-        background: transparent url(${props => props.background2}) no-repeat center;
-        background-size: contain;
-        > div{
-            height: 400px;
+        p{
+            margin-left: 0;
         }
     }
 `;
 
-export const Notebook = styled.div`
+export const NotebookHero = styled.div`
+    width: 100%;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    
-    height: 240px;
+    z-index: 1;
+    margin-top: 60px;
 
-    background: url(${props => props.background}) no-repeat center;
-    background-size: contain;
+    .elements{
+        display: none;
+    }
+
+    @media (min-width: 768px){
+        .elements{
+            display: block;
+        }
+    }
+
+    @media (min-width: 992px){
+        margin-top: 0;
+    }
+`;
+
+export const Image = styled.img.attrs(
+    props => ({ 'src': props.img })
+)`
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 `
 
 export const BlurShadow = styled.div`
-    position: absolute;
+    position: relative;
+    top: 50%;
     left: 50%;
-    bottom: 50px;
     transform: translateX(-50%);
 
     width: 280px;
@@ -77,8 +99,9 @@ export const BlurShadow = styled.div`
     background-color: ${props => props.theme.colors.primary};
 
     @media (min-width: 768px){
-        width: 460px;
-        height: 460px;
+        margin-top: 60px;
+        width: 400px;
+        height: 400px;
         
         > div{
             height: 400px;

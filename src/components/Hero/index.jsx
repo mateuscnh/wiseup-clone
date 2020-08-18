@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, Content, InfoHero, NotebookHero, Notebook, BlurShadow } from './styles';
+import { Container, Content, InfoHero, NotebookHero, Image, BlurShadow } from './styles';
 import Button from '../Button';
 
 import elements from '../../assets/images/online/elementos.png';
@@ -16,9 +16,12 @@ function Hero() {
                     <p>Com Wise Up Online, você é<br />independente para desenvolver seu<br />inglês onde quiser e na hora que puder.</p>
                     <Button>COMECE AGORA</Button>
                 </InfoHero>
-                <BlurShadow />
-                <NotebookHero background={elements_mob} background2={elements}>
-                    <Notebook background={notebook} />
+
+                <NotebookHero>
+                    <BlurShadow />
+                    <Image img={elements_mob} alt="" />
+                    <Image className="elements" img={elements} alt="" />
+                    <Image img={notebook} alt="" />
                 </NotebookHero>
             </Content>
         </Container>

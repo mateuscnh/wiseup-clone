@@ -40,9 +40,11 @@ function Footer() {
         <Container>
             <div className="content">
                 <p>Copyright © 2019 Wise Up. All Rights Reserved | Política de Privacidade | Termos de Serviço | Ajuda</p>
-                <img src={icon_face} alt="" />
-                <img src={icon_youtube} alt="" />
-                <img src={icon_insta} alt="" />
+                <div className="social">
+                    <img src={icon_face} alt="" />
+                    <img src={icon_youtube} alt="" />
+                    <img src={icon_insta} alt="" />
+                </div>
             </div>
         </Container>
     );

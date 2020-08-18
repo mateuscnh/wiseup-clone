@@ -59,5 +59,10 @@ export default createGlobalStyle`
             max-width: 768px;
         }
     }
+    @media (min-width: 992px){
+        .content{
+            max-width: 1080px;
+        }
+    }
 
 `

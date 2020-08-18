@@ -40,5 +40,19 @@ export const Container = styled.div`
     @media (min-width: 768px){
         margin-bottom: 60px;
     }
+
+    @media (min-width: 992px){
+        max-width: 24%;
+
+        p{
+            font-size: .9rem;
+        }
+
+        footer{
+            h1{
+                font-size: 1rem;
+            }
+        }
+    }
   
 `;

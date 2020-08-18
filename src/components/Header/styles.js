@@ -51,9 +51,18 @@ export const Content = styled.div`
 export const Menu = styled.div`
     display: flex;
     ul li{
-        margin: 0 4px;
+        margin: 0 10px;
         display: inline-block;
+
+        a{
+            transition: .2s;
+        
+            :hover{
+                color: ${props => props.theme.colors.secondary};
+            }
+        }
     }
+
 `
 
 export const MobMenu = styled.div`
