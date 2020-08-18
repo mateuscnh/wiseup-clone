@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    padding: 40px 0;
+    padding: 100px 0;
     background-color: ${props => props.theme.colors.background_primary};
     
     h1, p{
@@ -28,7 +28,7 @@ export const Container = styled.div`
 
             img{
                 position: relative;
-                top: -100px;
+                top: -160px;
                 max-width: 300px;
             }
 

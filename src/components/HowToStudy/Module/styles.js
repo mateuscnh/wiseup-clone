@@ -4,7 +4,7 @@ export const Container = styled.div`
     width: 100%;
     margin: 4px;
     max-width: 180px;
-    height: 220px;
+    min-height: 220px;
 
     text-align: left;
 
@@ -38,12 +38,20 @@ export const Container = styled.div`
         }
     }
 
-    span{
-        display: block;
-        font-size: 1.1rem;
-        line-height: 22px;
+    footer{
         padding: 16px;
+        height: 100%;
+
+        span{
+            font-size: 1rem;
+            line-height: 22px;
+        }
+
+        p{
+            display: none;
+        }
     }
+
 
     @media (min-width: 768px){
         min-width: 32%;
@@ -51,5 +59,20 @@ export const Container = styled.div`
 
     @media (min-width: 992px){
         min-width: 23%;
+
+        footer{
+            min-height: 100px;
+            span{
+                margin-top: 0;
+            }
+
+            p{
+                display: block;
+                font-size: .8rem;
+                line-height: 20px;
+            }
+
+        }
+
     }
 `;
