@@ -8,19 +8,27 @@ import menu_x from '../../assets/images/icon-menu-x.svg';
 
 function Header() {
     const [activeMenu, setActiveMenu] = useState(false);
-    const body = document.body
+    const baseURL = 'http://localhost:3000';
 
     function handleClick(e) {
+        const bars = document.querySelector('#menu-bars');
+        const bodyStyle = document.body.style;
+
+        if (e.target.href) { // Click item filter
+            bars.src = baseURL + menu_bars;
+            bodyStyle.overflow = 'visible';
+            setActiveMenu(false);
+            return;
+        }
 
         function activeMenu(active) {
             setActiveMenu(active);
-            document.body.style.overflow = 'hidden';
+            bodyStyle.overflow = 'hidden';
             if (active) return menu_x;
-            document.body.style.overflow = 'visible';
+            bodyStyle.overflow = 'visible';
             return menu_bars;
         }
 
-        const baseURL = 'http://localhost:3000';
         const imgMenu = e.target.src === baseURL + menu_bars ? activeMenu(true) : activeMenu(false);
 
         e.target.src = baseURL + imgMenu;
@@ -30,15 +38,15 @@ function Header() {
         <Container>
             <Content className="content">
                 <img src={logo_mobile} alt="" />
-                <img src={menu_bars} alt="" onClick={handleClick} />
+                <img id="menu-bars" src={menu_bars} alt="" onClick={handleClick} />
             </Content>
             {activeMenu &&
                 <MobMenu>
                     <ul>
-                        <li><a href="#benefits">Benefícios</a></li>
-                        <li><a href="#methodology">Metodologia</a></li>
-                        <li><a href="#howToStudy">Como estudar?</a></li>
-                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#benefits" onClick={handleClick}>Benefícios</a></li>
+                        <li><a href="#methodology" onClick={handleClick}>Metodologia</a></li>
+                        <li><a href="#howToStudy" onClick={handleClick}>Como estudar?</a></li>
+                        <li><a href="#faq" onClick={handleClick}>FAQ</a></li>
                     </ul>
                 </MobMenu>
             }

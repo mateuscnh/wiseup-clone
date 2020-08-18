@@ -6,12 +6,14 @@ import wiseup from './assets/styles/Theme';
 
 import Header from './components/Header';
 import Hero from './components/Hero';
+import Benefits from './components/Benefits';
 
 const App = () => (
   <ThemeProvider theme={wiseup}>
     <GlobalStyles />
     <Header />
     <Hero />
+    <Benefits />
   </ThemeProvider>
 );
 
